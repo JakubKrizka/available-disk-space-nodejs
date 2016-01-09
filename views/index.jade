@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    div.container
+        meter(max!=total, value!=used, low="33%", high="66%", optimum="22%").meter
+        h3!= humanUsed
